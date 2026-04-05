@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="SONIX — Sign in to your futuristic music experience."/>
+  <meta name="description" content="SONIX Login"/>
   <title>SONIX — Login</title>
   <link rel="stylesheet" href="styles/login.css"/>
 </head>
@@ -16,130 +16,81 @@
   <div class="login-brand-panel">
     <div class="brand-content">
       <div class="brand-logo">
-        <div class="logo-ring">
-          <div class="logo-ring-inner">
-            <svg class="logo-svg" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="28" stroke="url(#logoGrad)" stroke-width="2.5" opacity="0.3"/>
-              <path d="M24 20 L24 44 L44 32 Z" fill="url(#logoGrad)"/>
-              <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
-            </svg>
-          </div>
-        </div>
-        <div class="brand-text-group">
-          <h1 class="brand-name">SONIX</h1>
-          <p class="brand-tagline">THE FUTURE OF SOUND</p>
-        </div>
+        <div class="logo-ring"><div class="logo-ring-inner">
+          <svg class="logo-svg" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="28" stroke="url(#logoGrad)" stroke-width="2.5" opacity="0.3"/>
+            <path d="M24 20 L24 44 L44 32 Z" fill="url(#logoGrad)"/>
+            <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
+          </svg>
+        </div></div>
+        <div class="brand-text-group"><h1 class="brand-name">SONIX</h1><p class="brand-tagline">THE FUTURE OF SOUND</p></div>
       </div>
       <div class="brand-features">
-        <div class="feature-item">
-          <div class="feature-icon">🎵</div>
-          <div class="feature-text"><h3>Infinite Library</h3><p>Millions of tracks at your fingertips</p></div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">🎧</div>
-          <div class="feature-text"><h3>Spatial Audio</h3><p>Immersive 3D sound experience</p></div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">⚡</div>
-          <div class="feature-text"><h3>AI Recommendations</h3><p>Discover music tuned to your taste</p></div>
-        </div>
+        <div class="feature-item"><div class="feature-icon">🎵</div><div class="feature-text"><h3>Infinite Library</h3><p>Millions of tracks at your fingertips</p></div></div>
+        <div class="feature-item"><div class="feature-icon">🎧</div><div class="feature-text"><h3>Spatial Audio</h3><p>Immersive 3D sound experience</p></div></div>
+        <div class="feature-item"><div class="feature-icon">⚡</div><div class="feature-text"><h3>AI Recommendations</h3><p>Discover music tuned to your taste</p></div></div>
       </div>
-      <div class="brand-visualizer">
-        <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
-        <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
-        <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
-        <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
-      </div>
+      <div class="brand-visualizer"><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div></div>
     </div>
   </div>
   <div class="login-form-panel">
     <div class="form-container">
-      <div class="mobile-brand">
-        <div class="mobile-logo-icon">
-          <svg viewBox="0 0 64 64" fill="none" width="36" height="36">
-            <path d="M24 20 L24 44 L44 32 Z" fill="url(#mLogoGrad)"/>
-            <defs><linearGradient id="mLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
-          </svg>
-        </div>
-        <span class="mobile-logo-text">SONIX</span>
-      </div>
-      <div class="form-header">
-        <h2 class="form-title">Welcome back</h2>
-        <p class="form-subtitle">Sign in to continue your journey</p>
-      </div>
+      <div class="mobile-brand"><div class="mobile-logo-icon"><svg viewBox="0 0 64 64" fill="none" width="36" height="36"><path d="M24 20 L24 44 L44 32 Z" fill="url(#mLogoGrad)"/><defs><linearGradient id="mLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs></svg></div><span class="mobile-logo-text">SONIX</span></div>
+      <div class="form-header"><h2 class="form-title">Welcome back</h2><p class="form-subtitle">Sign in to continue your journey</p></div>
       <div class="social-login">
-        <button class="social-btn" id="googleLoginBtn" type="button">
+        <button class="social-btn" id="googleLoginBtn" type="button" onclick="signInWithGoogle()">
           <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.2-2.7-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.2-2.7-.4-3.9z"/></svg>
-          <span>Continue with Google</span>
+          <span>Continue with Google</span><span class="social-loader" id="googleLoader"></span>
         </button>
-        <button class="social-btn" id="appleLoginBtn" type="button">
+        <button class="social-btn" id="appleLoginBtn" type="button" onclick="signInWithGoogle()">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.51-3.23 0-1.44.64-2.2.45-3.06-.4C3.79 16.17 4.36 9.25 8.91 8.99c1.32.07 2.24.75 3.01.8.92-.19 1.8-.88 2.82-.83 1.14.07 2.07.52 2.72 1.34-2.79 1.64-2.12 5.29.43 6.33-.59 1.55-1.35 3.06-2.84 4.65ZM12.03 8.95c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"/></svg>
           <span>Continue with Apple</span>
         </button>
       </div>
-      <div class="divider">
-        <span class="divider-line"></span>
-        <span class="divider-text">or sign in with email</span>
-        <span class="divider-line"></span>
-      </div>
-      <form class="login-form" id="loginForm" onsubmit="handleLogin(event)">
-        <div class="input-group">
-          <label class="input-label" for="emailInput">Email address</label>
-          <div class="input-wrapper">
-            <span class="input-icon">✉</span>
-            <input type="email" id="emailInput" class="login-input" placeholder="you@example.com" required autocomplete="email"/>
-            <span class="input-focus-ring"></span>
-          </div>
-        </div>
-        <div class="input-group">
-          <label class="input-label" for="passwordInput">Password</label>
-          <div class="input-wrapper">
-            <span class="input-icon">🔒</span>
-            <input type="password" id="passwordInput" class="login-input" placeholder="Enter your password" required autocomplete="current-password"/>
-            <button type="button" class="toggle-pw" id="togglePwBtn" onclick="togglePassword()"><span id="pwEyeIcon">👁</span></button>
-            <span class="input-focus-ring"></span>
-          </div>
-        </div>
-        <div class="form-options">
-          <label class="remember-me" for="rememberCheck">
-            <input type="checkbox" id="rememberCheck"/>
-            <span class="custom-check"></span>
-            <span>Remember me</span>
-          </label>
-          <a href="#" class="forgot-link" id="forgotPasswordLink">Forgot password?</a>
-        </div>
-        <button type="submit" class="login-submit-btn" id="loginSubmitBtn">
-          <span class="btn-text">Sign In</span>
-          <span class="btn-loader" id="btnLoader"></span>
-          <span class="btn-glow"></span>
-        </button>
+      <div class="auth-error" id="authError"><span class="error-icon">⚠</span><span class="error-text" id="authErrorText"></span></div>
+      <div class="divider"><span class="divider-line"></span><span class="divider-text">or sign in with email</span><span class="divider-line"></span></div>
+      <form class="login-form" id="loginForm" onsubmit="handleEmailLogin(event)">
+        <div class="input-group"><label class="input-label" for="emailInput">Email address</label><div class="input-wrapper"><span class="input-icon">✉</span><input type="email" id="emailInput" class="login-input" placeholder="you@example.com" required autocomplete="email"/><span class="input-focus-ring"></span></div></div>
+        <div class="input-group"><label class="input-label" for="passwordInput">Password</label><div class="input-wrapper"><span class="input-icon">🔒</span><input type="password" id="passwordInput" class="login-input" placeholder="Enter your password" required autocomplete="current-password"/><button type="button" class="toggle-pw" id="togglePwBtn" onclick="togglePassword()"><span id="pwEyeIcon">👁</span></button><span class="input-focus-ring"></span></div></div>
+        <div class="form-options"><label class="remember-me" for="rememberCheck"><input type="checkbox" id="rememberCheck"/><span class="custom-check"></span><span>Remember me</span></label><a href="#" class="forgot-link" id="forgotPasswordLink">Forgot password?</a></div>
+        <button type="submit" class="login-submit-btn" id="loginSubmitBtn"><span class="btn-text">Sign In</span><span class="btn-loader" id="btnLoader"></span><span class="btn-glow"></span></button>
       </form>
-      <div class="signup-prompt">
-        <span>Don't have an account?</span>
-        <a href="#" class="signup-link" id="signupLink">Create one</a>
-      </div>
-      <div class="form-footer">
-        <p>By signing in, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
-      </div>
+      <div class="signup-prompt"><span>Don't have an account?</span><a href="#" class="signup-link" id="signupLink" onclick="handleSignup(event)">Create one</a></div>
+      <div class="form-footer"><p>By signing in, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p></div>
     </div>
   </div>
 </div>
 <div class="success-overlay" id="successOverlay">
   <div class="success-content">
-    <div class="success-icon">
-      <svg viewBox="0 0 64 64" width="64" height="64">
-        <circle cx="32" cy="32" r="28" fill="none" stroke="url(#sGrad)" stroke-width="2" class="success-circle"/>
-        <path d="M20 32 L28 40 L44 24" fill="none" stroke="url(#sGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="success-check"/>
-        <defs><linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
-      </svg>
-    </div>
-    <h2 class="success-title">Welcome to SONIX</h2>
-    <p class="success-sub">Redirecting to your dashboard...</p>
+    <div class="success-icon"><svg viewBox="0 0 64 64" width="64" height="64"><circle cx="32" cy="32" r="28" fill="none" stroke="url(#sGrad)" stroke-width="2" class="success-circle"/><path d="M20 32 L28 40 L44 24" fill="none" stroke="url(#sGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="success-check"/><defs><linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs></svg></div>
+    <h2 class="success-title" id="successTitle">Welcome to SONIX</h2>
+    <p class="success-sub" id="successSub">Redirecting to your dashboard...</p>
+    <div class="success-user" id="successUser"></div>
   </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script>
+const firebaseConfig={apiKey:"AIzaSyDExample_REPLACE_WITH_YOUR_KEY",authDomain:"sonix-music-app.firebaseapp.com",projectId:"sonix-music-app",storageBucket:"sonix-music-app.appspot.com",messagingSenderId:"123456789",appId:"1:123456789:web:abc123"};
+let firebaseReady=false,auth=null,googleProvider=null;
+try{firebase.initializeApp(firebaseConfig);auth=firebase.auth();googleProvider=new firebase.auth.GoogleAuthProvider();googleProvider.addScope('email');googleProvider.addScope('profile');firebaseReady=true}catch(e){console.log('Firebase demo mode')}
+
+function signInWithGoogle(){const btn=document.getElementById('googleLoginBtn');btn.classList.add('social-loading');hideError();
+if(firebaseReady&&auth){auth.signInWithPopup(googleProvider).then(r=>{const u=r.user;const d={name:u.displayName||'User',email:u.email,photo:u.photoURL,uid:u.uid,provider:'google'};localStorage.setItem('sonixUser',JSON.stringify(d));showSuccess(d)}).catch(e=>{btn.classList.remove('social-loading');if(e.code==='auth/popup-closed-by-user'||e.code==='auth/cancelled-popup-request')return;let m='Something went wrong. Try again.';if(e.code==='auth/popup-blocked')m='Popup blocked. Allow popups for this site.';else if(e.code==='auth/unauthorized-domain')m='Domain not authorized in Firebase.';else if(e.code==='auth/api-key-not-valid'){m='Firebase not configured. See setup guide.';showSetupGuide()}showError(m);console.error(e)})}else{btn.classList.remove('social-loading');showSetupGuide()}}
+
+function handleEmailLogin(e){e.preventDefault();const btn=document.getElementById('loginSubmitBtn');const email=document.getElementById('emailInput').value.trim();const pw=document.getElementById('passwordInput').value;btn.classList.add('loading');btn.disabled=true;hideError();
+if(firebaseReady&&auth){auth.signInWithEmailAndPassword(email,pw).then(r=>{const u=r.user;const d={name:u.displayName||email.split('@')[0],email:u.email,photo:u.photoURL,uid:u.uid,provider:'email'};localStorage.setItem('sonixUser',JSON.stringify(d));showSuccess(d)}).catch(e=>{btn.classList.remove('loading');btn.disabled=false;let m='Invalid email or password.';if(e.code==='auth/user-not-found')m='No account found. Click "Create one".';else if(e.code==='auth/wrong-password')m='Wrong password.';else if(e.code==='auth/too-many-requests')m='Too many attempts. Try later.';else if(e.code==='auth/api-key-not-valid'){demoLogin(email);return}showError(m)})}else{demoLogin(email)}}
+
+function demoLogin(email){const btn=document.getElementById('loginSubmitBtn');setTimeout(()=>{btn.classList.remove('loading');btn.disabled=false;const d={name:email?email.split('@')[0]:'User',email:email||'user@sonix.com',photo:null,uid:'demo-'+Date.now(),provider:'demo'};localStorage.setItem('sonixUser',JSON.stringify(d));showSuccess(d)},1500)}
+
+function handleSignup(e){e.preventDefault();const email=document.getElementById('emailInput').value.trim();const pw=document.getElementById('passwordInput').value;if(!email||!pw){showError('Enter email and password first.');return}if(pw.length<6){showError('Password needs 6+ characters.');return}hideError();const btn=document.getElementById('loginSubmitBtn');btn.classList.add('loading');btn.disabled=true;
+if(firebaseReady&&auth){auth.createUserWithEmailAndPassword(email,pw).then(r=>{const u=r.user;return u.updateProfile({displayName:email.split('@')[0]}).then(()=>{const d={name:email.split('@')[0],email:u.email,photo:null,uid:u.uid,provider:'email'};localStorage.setItem('sonixUser',JSON.stringify(d));showSuccess(d)})}).catch(e=>{btn.classList.remove('loading');btn.disabled=false;let m='Could not create account.';if(e.code==='auth/email-already-in-use')m='Email already registered. Sign in instead.';showError(m)})}else{demoLogin(email)}}
+
+function showSetupGuide(){showError('Google Sign-In needs Firebase setup. Go to console.firebase.google.com > Create Project > Authentication > Enable Google > Copy config to login.html')}
+function showSuccess(d){const o=document.getElementById('successOverlay');const t=document.getElementById('successTitle');const u=document.getElementById('successUser');if(d.name)t.textContent='Welcome, '+d.name+'!';if(d.photo)u.innerHTML='<img src="'+d.photo+'" class="success-avatar"/><p class="success-email">'+d.email+'</p>';else if(d.email)u.innerHTML='<p class="success-email">'+d.email+'</p>';o.classList.add('show');setTimeout(()=>{window.location.href='index.html'},2500)}
+function showError(m){const e=document.getElementById('authError');document.getElementById('authErrorText').textContent=m;e.classList.add('show');e.style.borderColor='';e.style.background=''}
+function hideError(){document.getElementById('authError').classList.remove('show')}
 function togglePassword(){const p=document.getElementById('passwordInput'),i=document.getElementById('pwEyeIcon');if(p.type==='password'){p.type='text';i.textContent='🙈'}else{p.type='password';i.textContent='👁'}}
-function handleLogin(e){e.preventDefault();const b=document.getElementById('loginSubmitBtn');b.classList.add('loading');b.disabled=true;setTimeout(()=>{b.classList.remove('loading');document.getElementById('successOverlay').classList.add('show');setTimeout(()=>{window.location.href='index.html'},2000)},1500)}
 document.querySelectorAll('.login-input').forEach(input=>{input.addEventListener('focus',()=>{input.closest('.input-wrapper').classList.add('focused')});input.addEventListener('blur',()=>{input.closest('.input-wrapper').classList.remove('focused');if(input.value)input.closest('.input-wrapper').classList.add('filled');else input.closest('.input-wrapper').classList.remove('filled')})});
 (function(){const c=document.getElementById('loginParticleCanvas');if(!c)return;const x=c.getContext('2d');let w,h,p=[],m={x:-999,y:-999};const C=['rgba(0,240,255,','rgba(139,92,246,','rgba(255,0,170,'];function r(){w=c.width=innerWidth;h=c.height=innerHeight}addEventListener('resize',r);r();document.addEventListener('mousemove',e=>{m.x=e.clientX;m.y=e.clientY});class P{constructor(){this.i(true)}i(n){this.x=n?Math.random()*w:(Math.random()<.5?-20:w+20);this.y=Math.random()*h;this.r=Math.random()*2+.5;this.dx=(Math.random()-.5)*.3;this.dy=(Math.random()-.5)*.3;this.a=Math.random()*.4+.08;this.c=Math.floor(Math.random()*C.length);this.p=Math.random()*Math.PI*2}u(){this.x+=this.dx;this.y+=this.dy;this.p+=.02;const d=this.x-m.x,e=this.y-m.y,f=Math.sqrt(d*d+e*e);if(f<120){const g=(120-f)/120*.15;this.dx+=(d/f)*g;this.dy+=(e/f)*g}this.dx*=.995;this.dy*=.995;if(this.x<-30||this.x>w+30||this.y<-30||this.y>h+30)this.i(false)}d(){const a=this.a*(.5+.5*Math.sin(this.p)),o=C[this.c];x.beginPath();x.arc(this.x,this.y,this.r,0,Math.PI*2);x.fillStyle=o+a+')';x.fill();x.beginPath();x.arc(this.x,this.y,this.r*3,0,Math.PI*2);x.fillStyle=o+(a*.08)+')';x.fill()}}for(let i=0;i<40;i++)p.push(new P);function dc(){for(let i=0;i<p.length;i++)for(let j=i+1;j<p.length;j++){const d=p[i].x-p[j].x,e=p[i].y-p[j].y,f=Math.sqrt(d*d+e*e);if(f<140){const o=(1-f/140)*.06;x.beginPath();x.moveTo(p[i].x,p[i].y);x.lineTo(p[j].x,p[j].y);x.strokeStyle='rgba(0,240,255,'+o+')';x.lineWidth=.5;x.stroke()}}}function a(){x.clearRect(0,0,w,h);p.forEach(q=>{q.u();q.d()});dc();requestAnimationFrame(a)}a()})();
 </script>
