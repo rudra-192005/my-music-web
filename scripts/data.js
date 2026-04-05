@@ -170,14 +170,29 @@ const TRACKS = [
     liked: false,
   },
   
-  ];
+    {
+    id: 13,
+    title: "Sitaare",
+    artist: "SUJAL BHARDWAJ",
+    album: "Sitaare",
+    year: 2025,
+    duration: "3:30",
+    durationSec: 210,
+    genre: "Punjabi Pop",
+    emoji: "⭐",
+    color: "#ffd700",
+    bg: "linear-gradient(135deg, #1a1500, #0d0a00)",
+    liked: true,
+    audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
+  },
+];
 
 const PLAYLISTS = [
   {
     id: 1,
     name: "Late Night Drives",
     description: "Dark synthwave for empty roads",
-    trackIds: [1, 7, 3, 8],
+    trackIds: [1, 7, 3, 8, 13],
     color: "#e8ff47",
     tag: "Synthwave",
     tagColor: "rgba(232,255,71,0.15)",
@@ -319,6 +334,21 @@ function loadState() {
   try {
     const s = localStorage.getItem('sonix_state');
     if (s) {
+      const parsed = JSON.parse(s);
+      Object.assign(appState, parsed);
+    }
+    const liked = localStorage.getItem('sonix_liked');
+    if (liked) {
+      JSON.parse(liked).forEach(item => {
+        const t = TRACKS.find(t => t.id === item.id);
+        if (t) t.liked = item.liked;
+      });
+    }
+  } catch(e) {}
+}
+
+loadState();
+if (s) {
       const parsed = JSON.parse(s);
       Object.assign(appState, parsed);
     }
