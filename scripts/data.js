@@ -169,21 +169,7 @@ const TRACKS = [
     bg: "linear-gradient(135deg, #1a1200, #0d0d00)",
     liked: false,
   },
-  {
-    id: 13,
-    title: "Sitaare",
-    artist: "SUJAL BHARDWAJ",
-    album: "Sitaare",
-    year: 2025,
-    duration: "3:30",
-    durationSec: 210,
-    genre: "Punjabi Pop",
-    emoji: "⭐",
-    color: "#ffd700",
-    bg: "linear-gradient(135deg, #1a1500, #0d0a00)",
-    liked: true,
-    audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
-  },
+  
   ];
 
 const PLAYLISTS = [
@@ -201,7 +187,7 @@ const PLAYLISTS = [
     id: 2,
     name: "Focus Mode",
     description: "Ambient flows for deep work",
-    trackIds: [3, 5, 8, 11],
+    trackIds: [3, 5, 8, 11, 13],
     color: "#47c8ff",
     tag: "Ambient",
     tagColor: "rgba(71,200,255,0.15)",
@@ -211,7 +197,7 @@ const PLAYLISTS = [
     id: 3,
     name: "Club Energy",
     description: "Heavy beats for maximum output",
-    trackIds: [2, 6, 9, 10, 12],
+    trackIds: [2, 6, 9, 10, 12, 13],
     color: "#ff4e6a",
     tag: "Electronic",
     tagColor: "rgba(255,78,106,0.15)",
@@ -247,7 +233,22 @@ const PLAYLISTS = [
     tagColor: "rgba(71,255,184,0.15)",
     tagTextColor: "#47ffb8",
   },
-];
+
+  {
+    id: 13,
+    title: "Sitaare",
+    artist: "SUJAL BHARDWAJ",
+    album: "Sitaare",
+    year: 2025,
+    duration: "3:30",
+    durationSec: 210,
+    genre: "Punjabi Pop",
+    emoji: "⭐",
+    color: "#ffd700",
+    bg: "linear-gradient(135deg, #1a1500, #0d0a00)",
+    liked: true,
+    audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
+  },];
 
 const USER = {
   name: "Alex Rivera",
