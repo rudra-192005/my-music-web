@@ -106,3 +106,15 @@ body::before{content:'';position:fixed;inset:0;z-index:-3;background:radial-grad
 @media(max-width:1024px){.login-brand-panel{padding:40px}.brand-content{max-width:360px}.brand-name{font-size:28px}.logo-ring{width:60px;height:60px}.logo-svg{width:32px;height:32px}}
 @media(max-width:768px){.login-wrapper{grid-template-columns:1fr;overflow-y:auto}.login-brand-panel{display:none}.login-form-panel{padding:32px 24px;min-height:100vh;align-items:flex-start;padding-top:60px}.mobile-brand{display:flex}.form-title{font-size:24px;text-align:center}.form-subtitle{text-align:center}.form-header{margin-bottom:28px}}
 @media(max-width:400px){.login-form-panel{padding:24px 16px;padding-top:48px}.form-title{font-size:20px}.social-btn{padding:11px 16px;font-size:13px}.login-input{padding:12px 12px 12px 40px;font-size:13px}.login-submit-btn{padding:14px 24px;font-size:13px}}
+
+.social-loader{display:none;width:18px;height:18px;border:2px solid rgba(0,240,255,0.2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+.social-btn.social-loading svg,.social-btn.social-loading span:not(.social-loader){display:none}
+.social-btn.social-loading .social-loader{display:inline-block}
+.social-btn.social-loading{pointer-events:none;justify-content:center;border-color:var(--accent);box-shadow:0 0 20px var(--accent-glow)}
+.auth-error{display:none;align-items:flex-start;gap:10px;padding:14px 16px;background:rgba(255,45,120,0.06);border:1px solid rgba(255,45,120,0.2);border-radius:var(--radius-sm);margin-bottom:20px;animation:fadeUp .3s var(--ease)}
+.auth-error.show{display:flex}
+.error-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+.error-text{font-size:13px;color:#ff6b9d;line-height:1.5;font-weight:500}
+.success-user{margin-top:20px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.success-avatar{width:56px;height:56px;border-radius:50%;border:2px solid var(--accent);box-shadow:0 0 20px var(--accent-glow);object-fit:cover}
+.success-email{font-size:13px;color:var(--text-secondary);font-family:var(--font-mono)}
