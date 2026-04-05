@@ -184,22 +184,7 @@ const TRACKS = [
     liked: true,
     audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
   },
-  {
-    id: 13,
-    title: "Sitaare",
-    artist: "SUJAL BHARDWAJ",
-    album: "Sitaare",
-    year: 2025,
-    duration: "3:30",
-    durationSec: 210,
-    genre: "Punjabi Pop",
-    emoji: "⭐",
-    color: "#ffd700",
-    bg: "linear-gradient(135deg, #1a1500, #0d0a00)",
-    liked: true,
-    audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
-  },
-];
+  ];
 
 const PLAYLISTS = [
   {
