@@ -182,7 +182,7 @@ const TRACKS = [
     color: "#ffd700",
     bg: "linear-gradient(135deg, #1a1500, #0d0a00)",
     liked: true,
-    audioSrc: "audio/Sitaare.mp3",
+    audioSrc: "audio/Sitaare (PenduJatt.Com.Se).mp3",
   },
 ];
 
