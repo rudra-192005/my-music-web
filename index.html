@@ -171,7 +171,7 @@ function renderTrackList(tracks) {
   document.getElementById('trackList').innerHTML = tracks.map((track, i) => {
     const isPlaying = appState.queue[appState.currentTrackIndex]?.id === track.id && appState.isPlaying;
     return `
-    <div class="track-row ${appState.queue[appState.currentTrackIndex]?.id === track.id ? 'now-playing' : ''}" ondblclick="playTrackById(${track.id})">
+    <div class="track-row ${appState.queue[appState.currentTrackIndex]?.id === track.id ? 'now-playing' : ''}" onclick="playTrackById(${track.id})">
       <div class="tr-num-wrap">
         <span class="tr-num">${isPlaying ? '' : (i+1)}</span>
         <span class="tr-play-ico">${isPlaying ? '<div class="eq"><span></span><span></span><span></span></div>' : '▶'}</span>
@@ -210,7 +210,7 @@ function filterTracks(query) {
 function playTrack(idx) {
   appState.queue = TRACKS;
   appState.currentTrackIndex = idx;
-  appState.isPlaying = true;
+  appState.isPlaying = true; _progress = 0; appState.progress = 0;
   saveState();
   refreshPlayerBar();
   updateHero();
@@ -229,7 +229,7 @@ function playPlaylistCard(id) {
   if (!pl) return;
   appState.queue = pl.trackIds.map(i => TRACKS.find(t=>t.id===i)).filter(Boolean);
   appState.currentTrackIndex = 0;
-  appState.isPlaying = true;
+  appState.isPlaying = true; _progress = 0; appState.progress = 0;
   saveState();
   refreshPlayerBar();
   updateHero();
